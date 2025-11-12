@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marwadi University — Innovation Meets Excellence</title>
+  <meta name="description" content="Award-winning responsive website for Marwadi University, featuring dynamic animations, accessibility, and sleek design — built with Bootstrap 5.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {--primary:#002b5b;--accent:#f4b41a;--dark:#0a0a0a;--light:#f8f9fa;--radius:1.2rem;}
+    body{font-family:'Poppins',sans-serif;background-color:var(--light);scroll-behavior:smooth;}
+    header{backdrop-filter:blur(10px);}
+    .navbar-brand span{color:var(--primary)}
+    .hero{background:linear-gradient(rgba(0,43,91,0.75),rgba(0,43,91,0.75)),url('assets/images/campus.jpg') center/cover no-repeat;color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;}
+    .hero h1{font-weight:700;font-size:3rem;animation:fadeDown 1s ease;}
+    .hero p{font-size:1.2rem;max-width:700px;margin:auto;animation:fadeUp 1.2s ease;}
+    .btn-accent{background-color:var(--accent);border:none;border-radius:var(--radius);font-weight:600;}
+    .btn-accent:hover{background-color:#ffc107;}
+    section{padding:5rem 0;}
+    .section-title{text-align:center;margin-bottom:3rem;position:relative;font-weight:700;}
+    .section-title::after{content:'';display:block;width:60px;height:4px;background:var(--accent);margin:1rem auto;border-radius:2px;}
+    .card{border:none;border-radius:var(--radius);box-shadow:0 5px 20px rgba(0,0,0,0.08);transition:all 0.4s ease;}
+    .card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,0,0,0.12);}
+    .vision{background:var(--primary);color:white;}
+    .recruiters img{filter:grayscale(1);opacity:0.8;transition:0.3s;}
+    .recruiters img:hover{filter:grayscale(0);opacity:1;}
+    footer{background-color:var(--dark);color:white;padding:3rem 0;}
+    @keyframes fadeDown{from{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body>
+  <header class="fixed-top bg-white bg-opacity-75 shadow-sm">
+    <nav class="navbar navbar-expand-lg container py-2">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#"><img src="assets/images/logo.png" width="45" class="me-2"><span>Marwadi University</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
+          <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recruiters">Recruiters</a></li>
+          <li class="nav-item"><a class="btn btn-accent ms-2" href="#contact">Apply</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Marwadi University</h1>
+      <p class="mt-3">Where Innovation, Education, and Global Opportunities Unite. Empowering 21st Century Leaders with Knowledge and Excellence.</p>
+      <a href="#about" class="btn btn-accent mt-4 px-4 py-2">Explore Now</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container text-center">
+      <h2 class="section-title">About Us</h2>
+      <p class="lead">Marwadi University, Rajkot is a NAAC accredited institution focused on quality education, innovation, and research excellence. Offering multidisciplinary programs, MU connects students with global opportunities and industry collaborations.</p>
+    </div>
+  </section>
+
+  <section id="vision" class="vision">
+    <div class="container text-center">
+      <h2 class="section-title text-white">Vision & Mission</h2>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h4>Vision</h4>
+          <p>To be a global university recognized for academic excellence, innovation, and leadership, fostering a culture of research and entrepreneurship.</p>
+        </div>
+        <div class="col-md-6">
+          <h4>Mission</h4>
+          <ul class="list-unstyled">
+            <li>• Provide holistic and inclusive education</li>
+            <li>• Foster research, innovation, and industry collaboration</li>
+            <li>• Develop socially responsible and ethical leaders</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs">
+    <div class="container">
+      <h2 class="section-title">Program Specific Outcomes</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">B.Tech Computer Science</button></h2>
+          <div id="collapse1" class="accordion-collapse collapse show">
+            <div class="accordion-body">Graduates will demonstrate expertise in software development, data analytics, and AI-driven innovation.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">MBA</button></h2>
+          <div id="collapse2" class="accordion-collapse collapse">
+            <div class="accordion-body">Graduates will possess strategic decision-making skills, leadership, and global management perspectives.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="courses">
+    <div class="container text-center">
+      <h2 class="section-title">Courses Offered</h2>
+      <div class="row g-4 mt-2">
+        <div class="col-md-4"><div class="card p-3"><h5>B.Tech (CSE)</h5><p>Duration: 4 Years</p></div></div>
+        <div class="col-md-4"><div class="card p-3"><h5>MBA</h5><p>Duration: 2 Years</p></div></div>
+        <div class="col-md-4"><div class="card p-3"><h5>B.Pharm</h5><p>Duration: 4 Years</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="bg-light">
+    <div class="container text-center">
+      <h2 class="section-title">Campus Life</h2>
+      <div class="row g-3">
+        <div class="col-md-4"><img src="assets/images/gallery1.jpg" class="img-fluid rounded"></div>
+        <div class="col-md-4"><img src="assets/images/gallery2.jpg" class="img-fluid rounded"></div>
+        <div class="col-md-4"><img src="assets/images/gallery3.jpg" class="img-fluid rounded"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="recruiters">
+    <div class="container text-center">
+      <h2 class="section-title">Top Recruiters</h2>
+      <div class="row recruiters g-3 align-items-center justify-content-center">
+        <div class="col-4 col-md-2"><img src="assets/images/recruiters/tcs.png" class="img-fluid"></div>
+        <div class="col-4 col-md-2"><img src="assets/images/recruiters/amazon.png" class="img-fluid"></div>
+        <div class="col-4 col-md-2"><img src="assets/images/recruiters/capgemini.png" class="img-fluid"></div>
+        <div class="col-4 col-md-2"><img src="assets/images/recruiters/cognizant.png" class="img-fluid"></div>
+      </div>
+      <p class="mt-4">Highest Package: <strong>₹34.5 LPA</strong> | 450+ Recruiters | 1000+ Students placed 5LPA+</p>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="section-title text-white">Contact Us</h2>
+      <p>Rajkot, Gujarat | Email: admissions@marwadiuniversity.ac.in | Phone: +91-99999 99999</p>
+      <a href="https://www.marwadiuniversity.ac.in" class="btn btn-accent mt-2">Visit Official Website</a>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <p class="mb-0">© <span id="year"></span> Marwadi University — Designed for Hackathon Excellence 🌟</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
